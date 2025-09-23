@@ -38,11 +38,9 @@ const CompanyCard = ({ company, index }) => {
           </div>
           
           <div className="flex-1">
-            <img 
-              src={company.logo} 
-              alt={`${company.name} logo`}
-              className="h-12 w-auto mb-4"
-            />
+            <div className="h-12 w-32 bg-gray-100 rounded-lg flex items-center justify-center mb-4 border">
+              <span className="text-gray-600 font-bold text-sm">{company.name}</span>
+            </div>
             
             <div className="space-y-2">
               <h3 className="text-lg font-semibold text-gray-900">
