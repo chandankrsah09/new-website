@@ -2,18 +2,19 @@ import React from 'react';
 import { Star, Users } from 'lucide-react';
 
 const StarRating = ({ rating }) => {
-  const fullStars = Math.floor(rating);
-  const hasHalfStar = rating % 1 !== 0;
-  const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+  const numRating = parseFloat(rating);
+  const fullStars = Math.floor(numRating);
+  const hasHalfStar = numRating % 1 !== 0;
+  const emptyStars = Math.max(0, 5 - fullStars - (hasHalfStar ? 1 : 0));
 
   return (
     <div className="flex items-center">
-      {[...Array(fullStars)].map((_, i) => (
-        <Star key={i} className="w-4 h-4 fill-green-500 text-green-500" />
+      {Array(fullStars).fill(0).map((_, i) => (
+        <Star key={`full-${i}`} className="w-4 h-4 fill-green-500 text-green-500" />
       ))}
-      {hasHalfStar && <Star className="w-4 h-4 fill-green-300 text-green-300" />}
-      {[...Array(emptyStars)].map((_, i) => (
-        <Star key={i} className="w-4 h-4 text-gray-300" />
+      {hasHalfStar && <Star key="half" className="w-4 h-4 fill-green-300 text-green-300" />}
+      {Array(emptyStars).fill(0).map((_, i) => (
+        <Star key={`empty-${i}`} className="w-4 h-4 text-gray-300" />
       ))}
     </div>
   );
