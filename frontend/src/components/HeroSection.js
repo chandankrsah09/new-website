@@ -24,11 +24,12 @@ const HeroSection = () => {
           
           <div className="flex-1 flex justify-end">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1594736797933-d0ca8ba97c46?w=500&h=600&fit=crop&crop=face"
-                alt="Happy woman with weight loss injections"
-                className="w-80 h-96 object-cover rounded-lg shadow-lg"
-              />
+              <div className="w-80 h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg shadow-lg flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">💊</div>
+                  <p className="text-gray-600">Weight Loss Solutions</p>
+                </div>
+              </div>
               <div className="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-lg text-sm">
                 <span className="text-blue-600 underline">Advertising Disclosure</span>
               </div>
