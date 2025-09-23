@@ -29,11 +29,9 @@ const ContentSections = () => {
           {/* CTA Box */}
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8 text-center">
             <div className="flex items-center justify-center mb-4">
-              <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&h=40&fit=crop"
-                alt="Ro Logo"
-                className="h-10"
-              />
+              <div className="h-10 w-20 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Ro</span>
+              </div>
             </div>
             <p className="font-semibold text-gray-900 mb-4">Get Started Online for Just $45</p>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold">
@@ -82,11 +80,9 @@ const ContentSections = () => {
           {/* Another CTA Box */}
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8 text-center">
             <div className="flex items-center justify-center mb-4">
-              <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&h=40&fit=crop"
-                alt="Ro Logo"
-                className="h-10"
-              />
+              <div className="h-10 w-20 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Ro</span>
+              </div>
             </div>
             <p className="font-semibold text-gray-900 mb-4">Get Started Online for Just $45</p>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold">
@@ -135,11 +131,9 @@ const ContentSections = () => {
           {/* Final CTA Box */}
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8 text-center">
             <div className="flex items-center justify-center mb-4">
-              <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=100&h=40&fit=crop"
-                alt="Ro Logo"
-                className="h-10"
-              />
+              <div className="h-10 w-20 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Ro</span>
+              </div>
             </div>
             <p className="font-semibold text-gray-900 mb-4">Get Started Online for Just $45</p>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold">
