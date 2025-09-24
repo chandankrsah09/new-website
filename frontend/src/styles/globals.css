@@ -65,3 +65,76 @@ button:focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+
+/* Banner Full Width Styles - Matching Original */
+.bannerFullWidth_wrapper {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(90deg, #f0f9ff 0%, #e0f2fe 100%);
+  overflow: hidden;
+}
+
+.bannerFullWidth_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bannerFullWidth_image {
+  object-fit: cover;
+}
+
+.bannerFullWidth_content {
+  position: relative;
+  z-index: 10;
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bannerFullWidth_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.bannerFullWidth_last-update-text {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bannerFullWidth_advertising-disclosure {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toolTip_container {
+  position: relative;
+}
+
+.general_desktop-only {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .general_desktop-only {
+    display: none;
+  }
+  
+  .bannerFullWidth_title {
+    font-size: 2.5rem;
+  }
+  
+  .bannerFullWidth_content {
+    padding: 3rem 1rem;
+  }
+}
