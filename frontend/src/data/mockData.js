@@ -3,7 +3,6 @@ export const mockData = {
     {
       id: 1,
       name: 'Ro',
-      logo: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=120&h=40&fit=crop',
       mainTitle: 'Proven Weight Loss with Personalized Care',
       subTitle: 'Get Started Online for Just $45',
       rating: '9.7',
@@ -20,7 +19,6 @@ export const mockData = {
     {
       id: 2,
       name: 'Remedy Meds',
-      logo: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=120&h=40&fit=crop',
       mainTitle: 'Lose 10% in 4 months or your money back',
       subTitle: 'New Promotion: $120 Off Your First Month',
       rating: '9.4',
@@ -34,7 +32,6 @@ export const mockData = {
     {
       id: 3,
       name: 'Medvi',
-      logo: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=120&h=40&fit=crop',
       mainTitle: 'Budget-Friendly Weight Loss Backed by Experts',
       subTitle: 'Save $120 + Free Shipping',
       rating: '9.4',
@@ -48,7 +45,6 @@ export const mockData = {
     {
       id: 4,
       name: 'Clinic Secret',
-      logo: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=120&h=40&fit=crop',
       mainTitle: '$70 Off Your First Month',
       subTitle: '$70 Off Your First Month',
       rating: '8.8',
@@ -62,7 +58,6 @@ export const mockData = {
     {
       id: 5,
       name: 'Sprout',
-      logo: 'https://images.unsplash.com/photo-1576089172869-4f5f6f315620?w=120&h=40&fit=crop',
       mainTitle: 'Get $50 off your 1st month after 2 min quiz',
       subTitle: 'Get $50 off your 1st month after 2 min quiz',
       rating: '8.7',
@@ -76,7 +71,6 @@ export const mockData = {
     {
       id: 6,
       name: 'Hers',
-      logo: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=120&h=40&fit=crop',
       mainTitle: 'No Hidden Fees - Oral Meds Start at $69/mo',
       subTitle: 'No Hidden Fees - Oral Meds Start at $69/mo',
       rating: '7.4',
@@ -90,7 +84,6 @@ export const mockData = {
     {
       id: 7,
       name: 'Hims',
-      logo: 'https://images.unsplash.com/photo-1576089172869-4f5f6f315620?w=120&h=40&fit=crop',
       mainTitle: '24/7 access to a care team',
       subTitle: '100% online, no office visits',
       rating: '7.3',
