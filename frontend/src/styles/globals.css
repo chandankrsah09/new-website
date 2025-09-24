@@ -69,12 +69,9 @@ button:focus-visible {
 /* Banner Full Width Styles - Matching Original */
 .bannerFullWidth_wrapper {
   position: relative;
-  width: 754.4px;
-  height: 172px;
-  max-width: 100%;
+  width: 100%;
   background: linear-gradient(90deg, #f0f9ff 0%, #e0f2fe 100%);
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .bannerFullWidth_container {
@@ -90,19 +87,16 @@ button:focus-visible {
 .bannerFullWidth_content {
   position: relative;
   z-index: 10;
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .bannerFullWidth_title {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 }
 
 .bannerFullWidth_last-update-text {
