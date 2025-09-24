@@ -64,7 +64,7 @@ const HeroSection = () => {
           </div>
         </div>
         
-        <div className="toolTip_container general_desktop-only bannerFullWidth_advertising-disclosure absolute top-4 right-4 z-20 bg-white/90 px-3 py-1 rounded-lg text-sm shadow-md">
+        <div className="toolTip_container general_desktop-only bannerFullWidth_advertising-disclosure absolute top-2 right-2 z-20 bg-white/90 px-2 py-1 rounded text-xs shadow-md">
           <label style={{ color: '#2d2d2d' }}>
             <span style={{ display: 'inline' }}>
               <span className="text-blue-600 underline cursor-pointer">Advertising Disclosure</span>
