@@ -11,12 +11,12 @@ const FeaturesBar = () => {
 
   return (
     <div className="bg-white border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex justify-center space-x-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-center space-x-3">
-              <feature.icon className={`w-8 h-8 ${feature.color}`} />
-              <span className="text-gray-700 font-medium">{feature.text}</span>
+            <div key={index} className="flex flex-col sm:flex-row items-center justify-center sm:justify-start text-center sm:text-left space-y-2 sm:space-y-0 sm:space-x-3">
+              <feature.icon className={`w-6 h-6 sm:w-8 sm:h-8 ${feature.color}`} />
+              <span className="text-gray-700 font-medium text-sm sm:text-base">{feature.text}</span>
             </div>
           ))}
         </div>

@@ -2,12 +2,13 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full bg-gradient-to-r from-blue-100 to-blue-200 overflow-hidden" style={{ minHeight: '400px' }}>
+    <section className="relative w-full bg-gradient-to-r from-blue-100 to-blue-200 overflow-hidden min-h-[300px] sm:min-h-[400px]">
       {/* Background Image - Woman with medical syringes */}
       <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-100/90 to-transparent z-10" />
         <img 
           alt="Best Weight Loss Injections of 2025 | BestWeightLossMeds"
-          className="absolute h-full w-full object-cover object-right"
+          className="absolute h-full w-full object-cover md:object-right"
           style={{
             position: 'absolute',
             height: '100%',
@@ -16,7 +17,7 @@ const HeroSection = () => {
             top: 0,
             right: 0,
             bottom: 0,
-            objectPosition: 'right center',
+            objectPosition: 'center',
             color: 'transparent'
           }}
           src="https://images.unsplash.com/photo-1542884841-9f546e727bca?w=1920&h=800&fit=crop&crop=face"
@@ -28,20 +29,20 @@ const HeroSection = () => {
       </div>
       
       {/* Content Overlay */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex items-center justify-between">
-          <div className="flex-1 max-w-2xl">
-            <h1 className="text-5xl font-bold mb-6 leading-tight" style={{ color: '#2d2d2d' }}>
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex-1 max-w-full md:max-w-2xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-gray-900">
               <span>Best Weight Loss Injections of 2025</span>
             </h1>
             
-            <p className="text-lg mb-6 leading-relaxed" style={{ color: '#2d2d2d' }}>
+            <p className="text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed text-gray-800">
               Tired of overeating? Compare top weight loss brands to find the best fit for your unique needs. 
               Explore treatment plans, such as Ozempic® and pick a weight loss med to get on track and kickstart a healthier you.
             </p>
             
             <div className="flex items-center mb-4">
-              <span style={{ color: '#2d2d2d' }} className="flex items-center">
+              <span className="flex items-center text-sm sm:text-base text-gray-800">
                 <svg 
                   stroke="currentColor" 
                   fill="currentColor" 
@@ -60,7 +61,7 @@ const HeroSection = () => {
           </div>
           
           {/* Right side space for the woman image (now background) */}
-          <div className="flex-1"></div>
+          <div className="hidden md:block flex-1"></div>
         </div>
       </div>
       

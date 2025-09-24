@@ -41,59 +41,61 @@ const CompanyLogo = ({ company }) => {
 const CompanyCard = ({ company, index }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 mb-4">
-      <div className="p-6">
-        <div className="flex items-start justify-between">
+      <div className="p-4 sm:p-6">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           {/* Left section - ranking and company info */}
-          <div className="flex items-start space-x-6 flex-1">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 flex-1">
             {/* Ranking circle and popular badge */}
-            <div className="flex flex-col items-center relative">
+            <div className="flex flex-row sm:flex-col items-center relative">
               {company.isPopular && (
-                <div className="mb-2">
-                  <span className="bg-green-500 text-white px-3 py-1 text-xs font-semibold rounded-full">
+                <div className="mb-0 sm:mb-2 mr-4 sm:mr-0">
+                  <span className="bg-green-500 text-white px-3 py-1 text-xs font-semibold rounded-full whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
               )}
-              <div className="w-12 h-12 bg-gray-100 border-2 border-gray-300 rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold text-gray-700">{index + 1}</span>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 border-2 border-gray-300 rounded-full flex items-center justify-center">
+                <span className="text-lg sm:text-xl font-bold text-gray-700">{index + 1}</span>
               </div>
             </div>
             
             {/* Company logo and details */}
-            <div className="flex-1">
-              <div className="mb-4">
-                <CompanyLogo company={company} />
-              </div>
-              
-              <div className="space-y-3">
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">
-                    {company.mainTitle}
-                  </h3>
-                  <div className="border-2 border-dashed border-blue-300 rounded-lg p-3 bg-blue-50">
-                    <p className="text-blue-800 font-semibold text-center">
-                      {company.subTitle}
-                    </p>
-                  </div>
+            <div className="flex-1 w-full">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                <div className="mb-2 sm:mb-4">
+                  <CompanyLogo company={company} />
                 </div>
                 
-                {/* Features list */}
-                <ul className="space-y-2">
-                  {company.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-gray-700">
-                      <span className="text-green-500 mr-3 mt-0.5 flex-shrink-0">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="space-y-3 flex-1 w-full text-center sm:text-left">
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1">
+                      {company.mainTitle}
+                    </h3>
+                    <div className="border-2 border-dashed border-blue-300 rounded-lg p-2 sm:p-3 bg-blue-50">
+                      <p className="text-blue-800 font-semibold text-sm sm:text-base">
+                        {company.subTitle}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Features list */}
+                  <ul className="space-y-2 text-left">
+                    {company.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start text-xs sm:text-sm text-gray-700">
+                        <span className="text-green-500 mr-2 sm:mr-3 mt-0.5 flex-shrink-0">✓</span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Right section - rating and button */}
-          <div className="flex flex-col items-center space-y-4 ml-6">
+          <div className="flex flex-col items-center space-y-4 border-t md:border-t-0 pt-4 md:pt-0 md:ml-6">
             <div className="text-center">
-              <div className="text-4xl font-bold text-gray-900 mb-1">
+              <div className="text-3xl sm:text-4xl font-bold text-gray-900 mb-1">
                 {company.rating}
               </div>
               <div className="mb-1">
@@ -102,16 +104,16 @@ const CompanyCard = ({ company, index }) => {
               <div className="text-xs text-gray-500">Our score</div>
             </div>
             
-            <div className="relative">
+            <div className="relative w-full sm:w-auto">
               <button 
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 onClick={() => console.log(`Visiting ${company.name}`)}
               >
                 Visit Site
               </button>
               
               {company.visitorsMonth && (
-                <div className="absolute -top-2 -right-2 bg-blue-100 border border-blue-300 rounded-lg p-2 shadow-md">
+                <div className="hidden md:block absolute -top-2 -right-2 bg-blue-100 border border-blue-300 rounded-lg p-2 shadow-md">
                   <div className="flex items-center text-xs text-blue-700 whitespace-nowrap">
                     <Users className="w-3 h-3 mr-1" />
                     <span>{company.visitorsMonth} people visited this site this month</span>
@@ -134,21 +136,21 @@ const CompanyCard = ({ company, index }) => {
 
 const CompanyListings = ({ companies }) => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 py-8 sm:py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <p className="text-gray-600 font-medium">Online Prescription</p>
+        <div className="text-center mb-6 sm:mb-8">
+          <p className="text-gray-600 font-medium text-sm sm:text-base">Online Prescription</p>
         </div>
         
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {companies.map((company, index) => (
             <CompanyCard key={company.id} company={company} index={index} />
           ))}
         </div>
         
         {/* Repeat Most Popular Section */}
-        <div className="mt-12 bg-blue-50 border-2 border-blue-200 rounded-lg p-6">
-          <h3 className="text-center text-xl font-bold text-blue-800 mb-6">Our Most Popular</h3>
+        <div className="mt-8 sm:mt-12 bg-blue-50 border-2 border-blue-200 rounded-lg p-4 sm:p-6">
+          <h3 className="text-center text-lg sm:text-xl font-bold text-blue-800 mb-4 sm:mb-6">Our Most Popular</h3>
           <div className="bg-white rounded-lg">
             <CompanyCard company={companies[0]} index={0} />
           </div>

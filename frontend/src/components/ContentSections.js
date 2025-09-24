@@ -2,23 +2,23 @@ import React from 'react';
 
 const ContentSections = () => {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-8 sm:py-12 md:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* What You Need To Know Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+        <div className="mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">
             What You Need To Know About Weight Loss Injections
           </h2>
-          <div className="prose prose-lg text-gray-700 space-y-6">
-            <p className="text-lg leading-relaxed">
+          <div className="prose prose-base sm:prose-lg text-gray-700 space-y-4 sm:space-y-6 max-w-none">
+            <p className="text-base sm:text-lg leading-relaxed">
               Weight loss injections are treatments created to support weight reduction. GLP-1 injections 
               generally include substances that boost metabolism and reduce appetite. The most effective 
               weight loss medications help you feel full faster while enhancing your body's ability to burn 
               calories, promoting both fat loss and weight maintenance. Some of the most popular names being, 
               Ozempic, Wegovy, Saxenda and Zepbound.
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="text-base sm:text-lg leading-relaxed">
               Other popular weight loss medications work by focusing on the body's digestive processes. 
               These injections slow down the absorption of food, resulting in a more controlled rise in 
               blood sugar levels. By stabilizing blood sugar, they help reduce cravings and prevent energy 
