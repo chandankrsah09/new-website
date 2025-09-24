@@ -19,10 +19,10 @@ const HeroSection = () => {
             objectPosition: 'right center',
             color: 'transparent'
           }}
-          src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=800&fit=crop&crop=face"
+          src="https://images.unsplash.com/photo-1542884841-9f546e727bca?w=1920&h=800&fit=crop&crop=face"
           onError={(e) => {
-            // Fallback to a better medical injection image
-            e.target.src = "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1920&h=800&fit=crop&crop=face";
+            // Fallback to woman with syringe
+            e.target.src = "https://images.unsplash.com/photo-1542868727-5b8fcd21495e?w=1920&h=800&fit=crop&crop=face";
           }}
         />
       </div>
