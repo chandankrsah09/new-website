@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Background Image - positioned absolutely like the original */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1747995371003-f920a24e7b93?w=1920&h=600&fit=crop&crop=face"
+          src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=1920&h=600&fit=crop&crop=face"
           alt="Best Weight Loss Injections of 2025"
           className="absolute h-full w-full object-cover object-right"
           style={{
@@ -20,7 +20,7 @@ const HeroSection = () => {
             objectPosition: 'right'
           }}
           onError={(e) => {
-            e.target.src = "https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=1920&h=600&fit=crop&crop=face";
+            e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='600' viewBox='0 0 1920 600'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23dbeafe;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23bfdbfe;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1920' height='600' fill='url(%23grad1)'/%3E%3Ctext x='1400' y='300' text-anchor='middle' fill='%234b5563' font-size='20' font-family='Arial'%3EMedical Professional%3C/text%3E%3Ctext x='1400' y='350' text-anchor='middle' fill='%234b5563' font-size='60'%3E👩‍⚕️💉%3C/text%3E%3C/svg%3E";
           }}
         />
       </div>
