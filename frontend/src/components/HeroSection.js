@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="bannerFullWidth_wrapper relative bg-gradient-to-r from-blue-50 to-blue-100" style={{ minHeight: '170px' }}>
+    <div className="bannerFullWidth_wrapper relative bg-gradient-to-r from-blue-50 to-blue-100" style={{ width: '754.4px', height: '172px', maxWidth: '100%' }}>
       <div className="bannerFullWidth_container relative">
         <img 
           alt="Best Weight Loss Injections of 2025 | BestWeightLossMeds"
