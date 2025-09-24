@@ -69,9 +69,12 @@ button:focus-visible {
 /* Banner Full Width Styles - Matching Original */
 .bannerFullWidth_wrapper {
   position: relative;
-  width: 100%;
+  width: 754.4px;
+  height: 172px;
+  max-width: 100%;
   background: linear-gradient(90deg, #f0f9ff 0%, #e0f2fe 100%);
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .bannerFullWidth_container {
